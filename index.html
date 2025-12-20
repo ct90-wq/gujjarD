@@ -107,6 +107,17 @@ body{
     color:#d1d5db;
 }
 </style>
+<script>
+function trackJoin() {
+  fbq('track', 'Lead', {
+    content_name: 'Telegram Join',
+    value: 0.00,
+    currency: 'INR'
+  });
+}
+</script>
+
+    
 </head>
 
 <body>
@@ -134,7 +145,7 @@ body{
     </div>
 
     <!-- ⭐ Pixel-safe CTA -->
-    <a href="https://t.me/+aLGIyJt7exMwMDE9" class="join-btn">
+    <a href="https://t.me/+aLGIyJt7exMwMDE9" class="join-btn" onclick="trackJoin()">
         🚀 Join Channel
     </a>
 
@@ -142,3 +153,4 @@ body{
 
 </body>
 </html>
+
